@@ -20,7 +20,6 @@ function Form() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!name || !price || !quantity || quantity < 0) return;
-    console.log("Submit");
     dispatch(
       addProduct({
         id: Math.floor(Math.random() * 1000).toString(),
